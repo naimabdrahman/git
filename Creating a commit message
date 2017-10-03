@@ -1,0 +1,18 @@
+A commit message is a short message explaining the changes that you've made. It is required before sending your coding changes off (which is called a push) and it is a good way to communicate to your co-developers what to expect from your changes. This section will explain how to create them.
+
+Commit messages are generally rather short, between one and two sentences explaining what your change did. It is good practice to commit each individual change before you do a push. You can push as many commits as you like. The only requirement for any commit is that it involves at least one file and it has a message. A push must have at least one commit.
+
+Continuing with our example, we are going to create the message for our initial commit:
+
+user@host ~/git/testing $ git commit -m "Initial Commit" -a
+[master (root-commit) 1b830f8] initial commit
+ 0 files changed
+ create mode 100644 file
+
+There are two important parameters of the above command. The first is -m, which signifies that our commit message (in this case "Initial Commit") is going to follow. Secondly, the -a signifies that we want our commit message to be applied to all added or modified files. This is okay for the first commit, but generally you should specify the individual files or directories that we want to commit.
+
+We could have also done:
+
+user@host ~/git/testing $ git commit -m "Initial Commit" file
+
+To specify a particular file to commit. To add additional files or directories, you just add a space separated list to the end of that command.
