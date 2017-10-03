@@ -1,0 +1,13 @@
+Now that you have git installed, you will need to submit some information about yourself so that commit messages will be generated with the correct information attached. To do this, use the git config command to provide the name and email address that you would like to have embedded into your commits:
+
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+To confirm that these configurations were added successfully, we can see all of the configuration items that have been set by typing:
+
+git config --list
+
+user.name=Your Name
+user.email=you@example.com
+
+This configuration will save you the trouble of seeing an error message and having to revise commits after you submit them.
