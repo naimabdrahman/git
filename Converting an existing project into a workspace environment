@@ -1,0 +1,14 @@
+Once all the files are in your git workspace, you need to tell git that you want to use your current directory as a git environment.
+
+user@host ~/git/testing $ git init
+Initialized empty Git repository in /home/user/git/testing/.git/
+
+Once your have initialized your new empty repository, you can add your files.
+
+The following will add all files and directories to your newly created repository:
+
+user@host ~/git/testing $ git add .
+
+In this case, no output is good output. Unfortunately, git does not always inform you if something worked.
+
+Every time you add or make changes to files, you need to write a commit message. The next section describes what a commit message is and how to write one.
